@@ -156,14 +156,6 @@ std::string TimeCode::ToString() const {
 }
 
 
-void TimeCode::WasteTimeAndBeSlow() const {
-	int num = 0;
-	for(int i = INT_MAX; i > 2; i--){
-		num = num * i;
-	}
-}
-
-
 TimeCode TimeCode::operator+(const TimeCode& other) const {
 	unsigned long long int newT = this->t + other.GetTimeCodeAsSeconds();
 	TimeCode ans = TimeCode(0, 0, newT);
