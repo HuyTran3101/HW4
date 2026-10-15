@@ -1,4 +1,3 @@
-
 #include "TimeCode.h"
 #include "TimeCode_Tests.h"
 #include <stdexcept> // for the exceptions

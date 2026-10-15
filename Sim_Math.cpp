@@ -10,6 +10,8 @@
 
 #include "Sim_Math.h"
 
+
+
 double power(double a, int b){
     if(b == 0){
         return 1;
@@ -188,7 +190,7 @@ std::unordered_map<std::string, double> build_crash_prob_map(){
                 static_cast<double>(sqlite3_column_int(stmt, 0));
         }
     }
-
+    
     sqlite3_finalize(stmt);
 
     // Count crashes with at least one automobile for each day of the week.

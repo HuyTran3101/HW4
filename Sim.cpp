@@ -265,7 +265,7 @@ int main(int argc, char* argv[]) {
 			last_progress = progress;
 		}
 
-		//ALL();
+		//ALL(); -- Ignore test function
 
 		// --- New Cars Show Up (maybe) ---
 		int num_new_cars = poisson(new_car_rate);
